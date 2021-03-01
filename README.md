@@ -2,6 +2,8 @@
 
 # ffmpeg (W)indows (C)ontext (T)ools
 Edit your media files quickly with: Right click > "Send to" menu.
+---
+The main idea behind this project is to limit the command line switches that need to be passed to ffmpeg.exe while keeping full control of the convertion process.
 
 ## Installation
 
@@ -31,6 +33,9 @@ REM Convert all *.avi to *.mp3 in D:\clips
 echo ffmpeg_mp3.bat "D:\clips\*.avi" 128k 44100
 ```
 Note: all paths must be wilcards. Use * or ? as needed
+
+## Configuration
+All ffmpeg configuration is stored in `bat\_config.bat` file. You can create your own by copying this file to `usr\config.bat` and edit it there. Your changes will be automatically loaded and will overwrite any corresponding values from `_config.bat`
 
 ## About
 ### Requirements
