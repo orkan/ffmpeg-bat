@@ -56,7 +56,7 @@ REM Don't run multiple threads on the same time b/c of disk usage overhead
 set WAIT_FILE=%~dpn0.tmp
 :wait
 if not exist "%WAIT_FILE%" (
-	echo %OUTFILE% > "%WAIT_FILE%"
+	echo "%OUTFILE%" > "%WAIT_FILE%"
 	goto :command
 )
 call :waitSleep 4
