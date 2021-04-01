@@ -1,5 +1,10 @@
 @echo off
-if "%CONFIG_LOADED%" == "yes" exit /b
+set EXTRA=%1
+
+if "%EXTRA%" NEQ "reload" if "%CONFIG_LOADED%" == "yes" exit /b
+
+REM system: --------------------------------------------
+set ERRORLEVEL=0
 
 REM ffmpeg: --------------------------------------------
 set FFMPEG_HOME_DEF=%~dp0..\ffmpeg-static

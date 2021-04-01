@@ -1,5 +1,6 @@
 @echo off
 setlocal
+call _config.bat
 call _header.bat "%~nx0"
 
 set FFPLAY_EXE=%~n0.exe

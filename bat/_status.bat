@@ -1,4 +1,7 @@
 @echo off
+REM Tip: Status codes https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+if "%ERRORLEVEL%" == "" set ERRORLEVEL=0
 set EXTRA=%1
 
 echo.

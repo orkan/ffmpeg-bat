@@ -1,5 +1,6 @@
 @echo off
 call _config.bat
+setlocal
 
 REM Display [header] only in DEBUG mode
 if "%FFMPEG_DEBUG%" == "" exit /b

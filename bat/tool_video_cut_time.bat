@@ -1,5 +1,6 @@
 @echo off
 setlocal
+call _config.bat reload
 call _header.bat "%~nx0"
 
 echo ***************************************************
@@ -15,6 +16,7 @@ REM Display: ------------------------------------------
 echo Inputs:
 echo INFILE : "%INFILE%"
 echo OUTFILE: "%OUTFILE%"
+echo   EXTRA: "%EXTRA%"
 
 REM Infile: --------------------------------------------
 call _inputfile.bat "%INFILE%" silent || goto :end

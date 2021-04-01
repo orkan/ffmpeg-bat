@@ -1,5 +1,6 @@
 @echo off
 setlocal
+call _config.bat reload
 call _header.bat "%~nx0"
 
 echo ***************************************************

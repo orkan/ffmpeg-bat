@@ -1,6 +1,5 @@
 @echo off
 setlocal
-REM Tip: Status codes https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
 
 REM Import: -------------------------------------------------
 set INPUT=%~1

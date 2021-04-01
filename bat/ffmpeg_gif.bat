@@ -1,5 +1,6 @@
 @echo off
 setlocal
+call _config.bat
 call _header.bat "%~nx0"
 
 echo ***************************************************
@@ -29,9 +30,9 @@ if "%SS%" == "-ss " set SS=-ss 0
 if "%TO%" == "-to " set TO=
 
 REM Strings: -------------------------------------------
-set SS_STR=%SS::=,%
+set SS_STR=%SS::=.%
 if "%TO%" NEQ "" (
-	set TO_STR=%TO::=,%
+	set TO_STR=%TO::=.%
 )
 
 REM Outfile: -------------------------------------------

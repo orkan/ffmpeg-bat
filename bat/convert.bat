@@ -4,6 +4,7 @@ set DATESTART=%DATE% %TIME%
 set FILES=%1
 if "%FILES%" == "" set "FILES=%~dp0..\usr\files_tests.bat"
 
+call _config.bat
 call _header.bat "%~nx0"
 echo ******************************************************************
 echo  Batch media converter
@@ -36,10 +37,10 @@ for %%f in (%3) do (
 	set /a COUNT+=1
 
 	if "%1" == "show" (
-		echo call %2 "%%f" %4 %5 %6 %7
+		echo call %2 "%%f" %4 %5 %6
 	) else (
 		echo.
-		call %2 "%%f" %4 %5 %6 %7 || exit /b
+		call %2 "%%f" %4 %5 %6 || exit /b
 	)
 )
 if %COUNT% == 0 (
