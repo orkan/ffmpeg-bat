@@ -26,6 +26,11 @@ set "META_USER_COMMENT=https://github.com/orkan/ffmpeg-bat"
 set "META_USER_DESCRIPTION=ffmpeg (W)indows (C)ontext (T)ools"
 set META_GLOBAL=-map_metadata 0 -metadata copyright="%META_USER_COPYRIGHT%" -metadata comment="%META_USER_COMMENT%" -metadata description="%META_USER_DESCRIPTION%" 
 
+REM Tools: ---------------------------------------------
+REM Put these in your usr\config.bat
+REM set TOOL_VIDEO_MERGE_TMPDIR=
+REM set TOOL_VIDEO_MERGE_OUTDIR=
+
 REM User config: ---------------------------------------
 set USER_CONFIG="%~dp0..\usr\config.bat"
 if exist %USER_CONFIG% (
